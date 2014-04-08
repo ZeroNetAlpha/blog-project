@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% block title %}Aleks' Hawken Blog{% endblock %}</title>
+        <title>{% block title %}My Django Blog{% endblock %}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,7 +25,16 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        {% block content %}
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
         <div class="navbar navbar-static-top navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">
@@ -40,18 +49,19 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="container">
             {% block header %}
                 <div class="page-header">
                     <h1>My Django Blog</h1>
                 </div>
             {% endblock %}
-    
+
             <div class="row">
+                {% block content %}{% endblock %}
             </div>
         </div>
-    
+
         <div class="container footer">
             <div class="row">
                 <div class="span12">
@@ -60,9 +70,6 @@
             </div>
         </div>
 
-        {% endblock %}
-
-                    
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{% static 'bower_components/html5-boilerplate/js/vendor/jquery-1.10.2.min.js' %}"><\/script>')</script>
         <script src="{% static 'bower_components/html5-boilerplate/js/plugins.js' %}"></script>
@@ -77,6 +84,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
     </body>
 </html>
