@@ -28,11 +28,11 @@
         <!-- Add your site or application content here -->
 
 
-      <div class="NVB1 NVB2 NVB2:hover navbar navbar-static-top navbar-inverse">
+      <div class="navbar navbar-static-top navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                      <div class="btn-group buts">
+                      <div class="btn-group">
                         <a href="/">  
                           <button type="button" class="btn btn-default">
                             <span class="glyphicon glyphicon-off"></span>
@@ -51,24 +51,16 @@
                             About
                           </button>
                         </a>
-                        <a href="/mechs/">
-                          <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-flash"></span>
-                            Mechs
-                          </button>
-                        </a>
-                        <a href="/screenshots/">
-                          <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-camera"></span>
-                            Screenshots
-                          </button>
-                        </a>
-                        <a href="http://playhawken.com/">
-                          <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-upload"></span>
-                            Hawken Home
-                          </button>
-                        </a>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                          Hawken <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="/mechs/"><span class="glyphicon glyphicon-flash"></span>Mechs</a></li>
+                          <li><a href="/screenshots/"><span class="glyphicon glyphicon-camera"></span>Screenshots</a></li>
+                          <li><a href="/stats/">Stats</a></li>
+                          <li class="divider"></li>
+                          <li><a href="http://playhawken.com"><span class="glyphicon glyphicon-upload"></span>Hawken Home</a></li>
+                        </ul>
                       </div>
                     </a>
                     <div class="nav-collapse collapse">
