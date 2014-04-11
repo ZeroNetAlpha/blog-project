@@ -71,7 +71,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UDT'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
