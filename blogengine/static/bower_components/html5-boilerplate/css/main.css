@@ -98,8 +98,13 @@ textarea {
    ========================================================================== */
 body {
     width:200; height:200;
+<<<<<<< HEAD
     background-image:url('bg5.jpg');
     background-size:100%;
+=======
+    background-image:url('bg6.jpg');
+    background-size:100% 100%;
+>>>>>>> a625d9b71aee9af2887954a65ee750fbb770d410
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:top center;
@@ -107,7 +112,7 @@ body {
 
 .bg {
     background:rgba(50,50,50,.95);
-    padding: 5px;
+    padding: 10px;
     margin:5px;
     color: #ddd;
     width:50%
